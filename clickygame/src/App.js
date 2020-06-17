@@ -1,7 +1,14 @@
 import React from "react";
-
+import Navbar from "./components/Navbar";
+import Jumbotron from "./components/Jumbotron";
+import characters from "./characters.json";
 function App() {
-  return <p>Hello</p>;
+  return (
+    <div>
+      <Navbar />
+      <Jumbotron />
+    </div>
+  );
 }
 
 export default App;
