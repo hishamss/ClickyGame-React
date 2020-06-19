@@ -1,0 +1,12 @@
+img {
+  width: 200px;
+  height: 200px;
+  padding: 12px;
+  background: #265aa7;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+img:hover {
+  padding: 8px;
+}

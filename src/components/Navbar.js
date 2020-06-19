@@ -1,8 +1,9 @@
 import React from "react";
 const styles = {
   navbarStyle: {
-    background: "#0099d8",
-    opacity: 0.78,
+    // background: "#0099d8",
+    background: "#265aa7",
+    opacity: 0.95,
     color: "white",
   },
   RowStyle: {
