@@ -22,6 +22,7 @@ class App extends Component {
       Shuffled[i] = Shuffled[j];
       Shuffled[j] = temp;
     }
+
     if (this.state.clickedCharacter) {
       if (id !== this.state.clickedCharacter) {
         newScore++;

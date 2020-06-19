@@ -9,7 +9,7 @@ const styles = {
 };
 function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="row" style={styles.RowStyle}>
         <div className="col" style={styles.ColStyle}>
           Clicky Game
