@@ -7,7 +7,7 @@ const styles = {
     textAlign: "center",
   },
 };
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="row" style={styles.RowStyle}>
@@ -15,10 +15,10 @@ function Navbar() {
           Clicky Game
         </div>
         <div className="col" style={styles.ColStyle}>
-          Score
+          Score: {props.score}
         </div>
         <div className="col" style={styles.ColStyle}>
-          Top Score
+          Top Score: {props.topScore}
         </div>
       </div>
     </nav>

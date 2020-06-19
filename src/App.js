@@ -25,10 +25,18 @@ class App extends Component {
     if (this.state.clickedCharacter) {
       if (id !== this.state.clickedCharacter) {
         newScore++;
+      } else {
+        newScore = 0;
       }
     }
     this.setState(
-      { clickedCharacter: id, characters: Shuffled, score: newScore },
+      {
+        clickedCharacter: id,
+        characters: Shuffled,
+        score: newScore,
+        topScore:
+          newScore > this.state.topScore ? newScore : this.state.topScore,
+      },
       () => console.log(this.state.score)
     );
   };
@@ -36,7 +44,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar score={this.state.score} topScore={this.state.topScore} />
         <Jumbotron />
         <Wrapper>
           {this.state.characters.map((character) => (
