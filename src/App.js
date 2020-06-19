@@ -25,14 +25,14 @@ class App extends Component {
       Shuffled[j] = temp;
     }
 
-    if (this.state.clickedCharacter) {
-      if (id !== this.state.clickedCharacter) {
-        newScore++;
-      } else {
-        newScore = 0;
-        shakeValue = true;
-      }
+    // if (this.state.clickedCharacter) {
+    if (id !== this.state.clickedCharacter) {
+      newScore++;
+    } else {
+      newScore = 0;
+      shakeValue = true;
     }
+    // }
     this.setState(
       {
         clickedCharacter: id,
