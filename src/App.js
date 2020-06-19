@@ -7,10 +7,14 @@ import characters from "./characters.json";
 
 class App extends Component {
   state = {
+    clickedCharacter: "",
     characters,
+    score: 0,
+    topScore: 0,
   };
 
-  shuffleCharacters = () => {
+  shuffleCharacters = (id) => {
+    let newScore = this.state.score;
     let Shuffled = this.state.characters;
     for (let i = Shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * i);
@@ -18,8 +22,17 @@ class App extends Component {
       Shuffled[i] = Shuffled[j];
       Shuffled[j] = temp;
     }
-    this.setState({ characters: Shuffled });
+    if (this.state.clickedCharacter) {
+      if (id !== this.state.clickedCharacter) {
+        newScore++;
+      }
+    }
+    this.setState(
+      { clickedCharacter: id, characters: Shuffled, score: newScore },
+      () => console.log(this.state.score)
+    );
   };
+
   render() {
     return (
       <div>
@@ -30,6 +43,7 @@ class App extends Component {
             <Character
               bg={character.img}
               key={character.id}
+              id={character.id}
               shuffle={this.shuffleCharacters}
             />
           ))}

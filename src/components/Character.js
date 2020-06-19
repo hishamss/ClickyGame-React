@@ -16,7 +16,7 @@ function Character(props) {
         style={styles.imgStyle}
         alt="characterImg"
         src={`${process.env.PUBLIC_URL}${props.bg}`}
-        onClick={props.shuffle}
+        onClick={() => props.shuffle(props.id)}
       ></img>
     </div>
   );
