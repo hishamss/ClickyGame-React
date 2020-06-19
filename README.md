@@ -1,6 +1,6 @@
 # React Click Game
 
-<h1><a href="https://hishamss.github.io/ClickyGame-React/" target="_blank">Game Link</h1>
+<h1><a href="https://hishamss.github.io/ClickyGame-React/" target="_blank">Game Link</a></h1>
 
 Clicky Game: it's a memory game built using React platform. The challenge is to memorize the last image that was clicked to avoid clicking the same image twice.
 
