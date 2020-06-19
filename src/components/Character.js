@@ -1,9 +1,13 @@
 import React from "react";
 
-function Character() {
+function Character(props) {
   return (
     <div className="card">
-      <div className="card-body">card</div>
+      <img
+        className="card-img-top"
+        alt="characterImg"
+        src={`${process.env.PUBLIC_URL}${props.bg}`}
+      ></img>
     </div>
   );
 }
