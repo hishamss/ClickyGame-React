@@ -9,6 +9,17 @@ class App extends Component {
   state = {
     characters,
   };
+
+  shuffleCharacters = () => {
+    let Shuffled = this.state.characters;
+    for (let i = Shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * i);
+      const temp = Shuffled[i];
+      Shuffled[i] = Shuffled[j];
+      Shuffled[j] = temp;
+    }
+    this.setState({ characters: Shuffled });
+  };
   render() {
     return (
       <div>
@@ -16,7 +27,11 @@ class App extends Component {
         <Jumbotron />
         <Wrapper>
           {this.state.characters.map((character) => (
-            <Character bg={character.img} key={character.id} />
+            <Character
+              bg={character.img}
+              key={character.id}
+              shuffle={this.shuffleCharacters}
+            />
           ))}
         </Wrapper>
       </div>

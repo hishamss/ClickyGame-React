@@ -6,6 +6,7 @@ const styles = {
     padding: "10px",
     background: "lightgrey",
     borderRadius: "10px",
+    marginBottom: "15px",
   },
 };
 function Character(props) {
@@ -15,6 +16,7 @@ function Character(props) {
         style={styles.imgStyle}
         alt="characterImg"
         src={`${process.env.PUBLIC_URL}${props.bg}`}
+        onClick={props.shuffle}
       ></img>
     </div>
   );
