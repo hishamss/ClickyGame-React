@@ -1,10 +1,17 @@
 import React from "react";
-
+const styles = {
+  jumboStyles: {
+    backgroundColor: "white",
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/jumboBG.jpg)`,
+    backgroundPosition: "center",
+    backgroundSize: "50%",
+    backgroundRepeat: "no-repeat",
+    height: "470px",
+  },
+};
 function Jumbotron() {
   return (
-    <div className="jumbotron text-center">
-      <h1 className="display-2">Click an image to begin!</h1>
-    </div>
+    <div className="jumbotron text-center" style={styles.jumboStyles}></div>
   );
 }
 
