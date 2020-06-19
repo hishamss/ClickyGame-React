@@ -1,4 +1,4 @@
-# React Click Game
+# React Clicky Game
 
 <h1><a href="https://hishamss.github.io/ClickyGame-React/" target="_blank">Game Link</a></h1>
 
