@@ -1,0 +1,23 @@
+.winning {
+  display: block;
+  position: fixed;
+  top: 50%;
+  color: #f9c741;
+  z-index: 100;
+  /* font-size: 213px; */
+  animation: textgrowth 1s infinite alternate;
+}
+
+@keyframes textgrowth {
+  0% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 213px;
+  }
+}
+
+.hide {
+  display: none;
+  transition: font-size 2s;
+}
