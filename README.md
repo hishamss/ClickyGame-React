@@ -20,9 +20,9 @@ Clicky Game: it's a memory game built using React platform. The challenge is to 
 
 !["Winning"](public/assets/videos/loose.gif)
 
-      <h2>Technology Used</h2>
+<h2>Technology Used</h2>
 
-   <hr>
+<hr>
 
 <table>
 <tr>
