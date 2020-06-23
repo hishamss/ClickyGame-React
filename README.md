@@ -2,18 +2,26 @@
 
 <h1><a href="https://hishamss.github.io/ClickyGame-React/" target="_blank">Game Link</a></h1>
 
-Clicky Game: it's a memory game built using React platform. The challenge is to memorize the last image that was clicked to avoid clicking the same image twice.
+Clicky Game: it's a memory game built using React platform. The challenge is to memorize the last image that was clicked to avoid clicking the same image twice during the course of the game.
 
 <h2>Use</h2>
 <hr>
 
-1. Clicking on one of the images will shuffle all the images- in other words it will randomly sort the images array
-2. the user's score will be incremented by one every time different image is clicked and will be reset to zero if the same image was clicked twice.
+1. Clicking on one of the 12 images will shuffle all the images- in other words it will randomly sort the images array
+2. the user's score will be incremented by one every time different image is clicked and will be reset to zero if the same image was clicked twice during the game.
 3. top Score tracks the highest score the user reach during the game.
+4. Once the score is 12, the user will get the winning message and score will reset to 0 to start new game.
 
-   !["Game Video"](public/assets/videos/game.gif)
+<h2>Win</h2>
+
+!["Win"](public/assets/videos/win.gif)
+
+<h2>Loose</h2>
+
+!["Winning"](public/assets/videos/loose.gif)
 
       <h2>Technology Used</h2>
+
    <hr>
 
 <table>
